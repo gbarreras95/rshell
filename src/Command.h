@@ -17,8 +17,7 @@ class Command : public Base{
     protected:
         char *commands[100];
     public:
-        Command(char * cmd, int type); 
-     
+        Command(char * cmd, int type);
         
         bool execute();
     

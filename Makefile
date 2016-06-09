@@ -1,7 +1,7 @@
 #rshell makefile
 
 COMPILE = g++
-OBJS = src/Format.cpp src/Command.cpp src/Test.cpp src/Base.h
+OBJS = src/Format.cpp src/Command.cpp src/Test.cpp src/Redirect.cpp src/Base.h
 FLAGS = -Wall -Werror -ansi -pedantic
 
 

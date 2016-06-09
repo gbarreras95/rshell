@@ -23,6 +23,8 @@ $ ls -l || vim && false ; cal
 
 Restrictions
 ------------
+-CANNOT handle multiple pipe operations chained together
+
 -Unable to run cd to change directory
 
 -test command does not work after connectors

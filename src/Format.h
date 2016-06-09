@@ -11,7 +11,7 @@ class Format: public Base{
     private:
         vector<Base*> commandLine; //Required vector of base pointers
         queue<string> connectors;
-        vector<int> cmdType;
+        vector<int> pipes;
         vector<string> cmds;
     public:
         Format(char * in, int type);
@@ -19,8 +19,12 @@ class Format: public Base{
         void format_commands(char * in, queue<string> &connectors, vector<int> &cmdType, vector<string> &cmds);
         bool testCheck(char* in);
         bool formatCheck(char* in);
+        int redirectCheck(char* in);
         string formatFinder(char* cutMe, int in);
         void cleanUp(char* cleanMe, int in);
+        string grabRed(char* input, int& index);
+        string grabPipe(char* in, int &index);
+        bool findPipe(char* in);
   
     
 };
